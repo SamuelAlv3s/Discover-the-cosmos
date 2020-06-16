@@ -14,8 +14,7 @@ Discover-the-cosmos
   <a href="#rocket-tecnologias-utilizadas">Tecnologias</a> | 
 </h3>
 
-![index]((https://user-images.githubusercontent.com/49680351/84722472-b7462880-af59-11ea-9973-0e4b34cfe41b.png)
-
+<img src="https://user-images.githubusercontent.com/49680351/84722472-b7462880-af59-11ea-9973-0e4b34cfe41b.png">
 
 ## :information_source: Sobre
 
