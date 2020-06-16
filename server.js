@@ -41,7 +41,7 @@ const url = 'https://api.us-south.language-translator.watson.cloud.ibm.com/insta
           languageTranslator.translate(translateParams)
             .then(translationResult => { return translationResult.result.translations[0].translation})
             .then(translate =>{
-                routes.get('/dtc', function(req, res){
+                routes.get('/', function(req, res){
                     return res.render('index.njk', {apod, translate});
                     });
             })
@@ -51,9 +51,7 @@ const url = 'https://api.us-south.language-translator.watson.cloud.ibm.com/insta
        
     });
 
-    routes.get('/', function(req, res){
-      return res.redirect('/dtc')
-    });
+    
 
     
 server.listen(3000);
