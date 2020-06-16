@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="favicon.ico">
+        <link href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@300;700&family=Roboto:wght@300;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/5f3b47165c.js" crossorigin="anonymous"></script>
+        <title>Discover The Cosmos</title>
+    </head>
+    <body>
+        <header>
+            <img src="/flame-searching.png" alt="flame-searching">
+            <h1>Descubra o Cosmos</h1>
+        </header>
+
+        <main>
+            <div class="container">
+                <div class="intro">
+                    <h4>Todos os dias é apresentada uma imagem/fotografia ou video diferente do nosso fascinante universo, juntamente com uma breve explicação escrita por um astrônomo profissional.</h4>
+                </div>
+                <div class="titulo-e-data">
+                    <h2>{{apod.title}}</h2>
+                    <span>Data:
+                        {{apod.date}}</span>
+                </div>
+                <div class="img-e-explan">
+                    {% if apod.media_type == 'image' %}
+                        <img src="{{apod.url}}" alt="{{apod.title}}">
+                    {% else %}
+                        <iframe src="{{apod.url}}" frameborder="0"></iframe>
+                    {% endif %}
+                    <div class="explanations">
+                        <p class="en">
+                            {{apod.explanation}}
+                            <span>Traduzir Pt-br</span>
+                        </p>
+                        <p class="pt-br">
+                            {{translate}}
+                            <span>Ver original</span>
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <div class="info">
+                <div class="me">
+                    <p>Made by Samuel Alves</p>
+                    <a href="https://github.com/SamuelAlv3s" target="_blank"><i class="fab fa-github"></i></a>
+                </div>
+                <div class="apod">
+                    <p>This site was made based on the API publishes NASA's APOD and inspired by the original site Astronomy <a href="https://apod.nasa.gov/apod/astropix.html" target="_blank">Picture of the Day</a></p>
+                </div>
+            </div>
+            <div class="lottie">
+                <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+                <lottie-player src="https://assets4.lottiefiles.com/packages/lf20_t1NDLE.json" background="transparent" speed="1" style="width: 400px; height: 400px;" loop="loop" autoplay="autoplay"></lottie-player>
+            </div>
+        </footer>
+
+        <script src="/script.js"></script>
+    </body>
+
+</html>

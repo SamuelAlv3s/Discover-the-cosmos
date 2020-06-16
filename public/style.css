@@ -1,0 +1,168 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    list-style: none;
+    text-decoration: none;
+}
+
+html{
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-color: #DDDDDD;
+}
+
+header{
+    width: 100%;
+    background-color: #111111;
+    height: 120px;
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    align-items: center;
+}
+
+header img{
+    width: 80px;
+    height: 80px;
+    border: 2px solid #DDDDDD;
+    border-radius: 50%;
+    margin-left: 15px;
+}
+
+header h1{
+    justify-self: center;
+    color: white;
+    font-family: 'MuseoModerno', cursive;
+    font-size: 3em;
+}
+
+.container{
+    width: 940px;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.intro{
+    margin: 30px auto;
+    background-color: seashell;
+    width: 800px;
+    padding: 10px 24px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.titulo-e-data{
+    display: grid;
+    grid-template-columns: 1fr 0.5fr;
+    align-items: center;
+    margin: 30px 0;
+}
+
+.titulo-e-data span,
+.titulo-e-data h2{
+    font-family: 'Roboto', sans-serif;
+    font-size: 2em;
+}
+
+.titulo-e-data span{
+    justify-self: flex-end;
+}
+
+.img-e-explan img{
+    width: 100%;
+    border-radius: 6px;
+}
+
+.img-e-explan iframe{
+    width: 100%;
+    height: 500px;
+    border-radius: 6px;
+}
+
+.img-e-explan p{
+    margin: 15px 0;
+    font-size: 1.2em;
+    font-family: 'Roboto', sans-serif;
+    opacity: 0.8;
+    text-align: justify;
+}
+
+.explanations{
+    margin-top: 15px;
+    margin-bottom: 80px;
+}
+
+.explanations span{
+    font-size: 14px;
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.explanations span:hover{
+    opacity: 1;
+}
+
+.pt-br,
+.en{
+    transition: all 300ms;
+}
+
+.pt-br{
+    display: none;
+}
+
+footer{
+    background-color: #5424b6;
+    display: grid;
+    grid-template-columns: 1fr 0.5fr;
+    align-items: center;
+}
+
+.info{
+    justify-self: center;
+}
+
+.me{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.me p{
+    font-size: 24px;
+    font-family: 'MuseoModerno', cursive;
+    color: skyblue;
+    margin-right: 15px;
+}
+
+.me a i{
+    font-size: 30px;
+    color: black;
+}
+
+.me a i:hover{
+    transform: scale(1.1);
+}
+.apod{
+    width: 450px;
+}
+.apod p{
+    font-size: 20px;
+    opacity: 0.7;
+    text-align: justify;
+}
+
+.apod p a{
+    color: tomato;
+    font-style: italic;
+    opacity: 0.7;
+}
+
+.apod p a:hover{
+    opacity: 1;
+}
