@@ -17,11 +17,11 @@ nunjucks.configure('views', {
     noCache: true
 });
 
-const apiKey = 'PfadJi8ZW5GLeaG8N6gTVZNvkJMf81sQTY7E-0_fJNVo';
-const url = 'https://api.us-south.language-translator.watson.cloud.ibm.com/instances/77c87984-e646-4d16-b123-806d334eaef9';
+const apiKey = 'x';
+const url = 'x';
 
 
-    fetch('https://api.nasa.gov/planetary/apod?api_key=0yDrBxsNT9gQZDsQVx0i26KWg7xHyYfANQakmgFj')
+    fetch('https://api.nasa.gov/planetary/apod?api_key=x')
     .then( (res) => {return res.json()})
     .then( (apod) =>{
 
