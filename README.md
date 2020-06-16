@@ -24,6 +24,7 @@ Discover-the-cosmos é a minha versão do site original Astronomy Picture of the
 ## :interrobang: Motivo
 
 O objetivo foi apresentar um layout um pouco mais "limpo", conseguir usar os dados disponíveis na API e fazer a tradução dos textos principais.
+*Pretendo continuar a atualizar e aperfeiçoar o projeto.
 
 ## :rocket: Tecnologias Utilizadas
 
