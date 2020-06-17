@@ -43,7 +43,7 @@ routes.get('/', function(req, res){
         languageTranslator.translate(translateParams)
           .then(translationResult => { return translationResult.result.translations[0].translation})
           .then(translate =>{
-            return res.render('index.njk', {apod});
+            return res.render('index.njk', {apod, translate});
           })
           .catch(err => {
             console.log('error:', err);
